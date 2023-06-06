@@ -8,9 +8,10 @@ const nodemailer = require("nodemailer");
 // send mail
 router.post("/register",  (req, res) => {
 console.log(req.body)
-    var { email,name}  = req.body;
+    var { email,name,formname}  = req.body;
   console.log("xxxxxxxxPravsh",email)
   console.log("xxxxxxxxNAme",name)
+  console.log("xxxxxxxxNAme",formname)
     var maillist = [
         email,
         'bhadouriapraveshsingh4@gmail.com',
@@ -33,7 +34,7 @@ console.log(req.body)
             from: "sfrmedical1@gmail.com",
            
             subject: "Onboard Registration",
-           html: `<h1>Congratulations</h1><h2>${name}</h2><h3>you have Succesfully Onboarded</h3>`,
+           html: `<h1>Congratulations</h1><h2>${name}</h2><h3>you have Succesfully</h3><h3> ${formname} </h3>`,
             to: maillist
         };
 

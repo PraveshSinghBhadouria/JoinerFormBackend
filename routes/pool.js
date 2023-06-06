@@ -4,9 +4,9 @@ var mysql=require('mysql')
 var pool=mysql.createPool({
 host:'sql.freedb.tech',
 port:3306,
-user:'freedb_newJoiner',
-password:'Q8bMGGjqkbM$Y9?',
-database:'freedb_newJoiner',
+user:'freedb_newSFR',
+password:'aGMe4$44XvJrrn!',
+database:'freedb_newSFR',
 connectionLimit:100
 
 
@@ -15,8 +15,8 @@ connectionLimit:100
 module.exports = pool; 
 
 
-
 /*
+
 var mysql=require('mysql')
 var pool=mysql.createPool({
 host:'localhost',
@@ -29,4 +29,5 @@ connectionLimit:100
 
 })
 
-module.exports = pool; */
+module.exports = pool; 
+*/
