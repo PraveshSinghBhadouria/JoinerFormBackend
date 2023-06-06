@@ -34,7 +34,7 @@ console.log(req.body)
             from: "sfrmedical1@gmail.com",
            
             subject: "Onboard Registration",
-           html: `<h1>Congratulations</h1><h2>${name}</h2><h3>you have Succesfully</h3><h3> ${formname} </h3>`,
+           html: `<h1>Dear,<div>${name}</div></h1><h3>Congratulations on successfully </h3><h3> ${formname} </h3>`,
             to: maillist
         };
 
